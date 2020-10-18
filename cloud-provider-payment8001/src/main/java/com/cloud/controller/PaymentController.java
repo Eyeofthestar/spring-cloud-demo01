@@ -1,7 +1,8 @@
 package com.cloud.controller;
 
-import com.api.cloud.pojo.CommentResult;
-import com.api.cloud.pojo.Payment;
+
+import com.cloud.api.pojo.CommentResult;
+import com.cloud.api.pojo.Payment;
 import com.cloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,7 +35,7 @@ public class PaymentController {
 
     @GetMapping("/payment/getPayment")
     public CommentResult getPayment(Integer id) {
-        Payment payment = paymentService.selectByPrimaryKey(id);
+        Payment payment=paymentService.selectByPrimaryKey(id);
         log.info("查询结果:" + payment.toString());
         if (payment != null) {
             return new CommentResult(200, "查询成功", payment);

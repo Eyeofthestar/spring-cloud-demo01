@@ -1,7 +1,7 @@
 package com.cloud.controller;
 
-import com.api.cloud.pojo.CommentResult;
-import com.api.cloud.pojo.Payment;
+import com.cloud.api.pojo.CommentResult;
+import com.cloud.api.pojo.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

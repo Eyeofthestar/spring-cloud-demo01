@@ -1,6 +1,7 @@
 package com.cloud.service.Impl;
 
-import com.api.cloud.pojo.Payment;
+
+import com.cloud.api.pojo.Payment;
 import com.cloud.mapper.PaymentDao;
 import com.cloud.service.PaymentService;
 import org.springframework.stereotype.Service;

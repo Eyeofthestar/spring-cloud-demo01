@@ -1,6 +1,6 @@
 package com.cloud.service;
 
-import com.api.cloud.pojo.Payment;
+import com.cloud.api.pojo.Payment;
 
 public interface PaymentService {
     int deleteByPrimaryKey(Integer id);
