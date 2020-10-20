@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-kz-order
+  cloud:
+    zookeeper:
+      connect-string: 192.168.0.239:2181
