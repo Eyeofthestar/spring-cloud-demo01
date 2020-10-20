@@ -1,0 +1,12 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: cloud-payment06-server  # 服务名称  注册在注册中心的显示的名称
+  cloud:
+    consul:
+      host: localhost
+      port: 8500 #默认就是8500
+      discovery:
+        service-name: ${spring.application.name}
