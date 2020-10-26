@@ -18,6 +18,7 @@ public class KzController {
 
     @RequestMapping("/consumer/payment/zk")
     public String getInvoc(){
+        System.out.println();
 //        INVOCK_URL+"/payment/zk"  完整的访问地址
         return restTemplate.getForObject(INVOCK_URL+"/payment/zk",String.class);
     }
